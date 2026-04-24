@@ -1,23 +1,22 @@
-apply plugin: 'com.android.library'
-
-version = VERSION_NAME
-group = GROUP
+plugins {
+    id 'com.android.library'
+}
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    namespace 'cn.pedant.sweetalert'
+
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 9
+        minSdk 21
     }
 
-    lintOptions {
-        abortOnError false
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
-    compile 'com.pnikosis:materialish-progress:1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 }
-
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
