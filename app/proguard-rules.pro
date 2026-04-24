@@ -1,19 +1,18 @@
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in C:\tools\adt-bundle-windows-x86_64-20131030\sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the proguardFiles
-# directive in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# ProGuard rules
 
-# Add any project specific keep options here:
+# Keep rules for VPN service classes and proxy servers
+-keep class com.slipkprojects.ultrasshservice.** { *; }
+-keep class com.slipkprojects.sockshttp.** { *; }
+-keep class me.dawson.proxyserver.** { *; }
+-keep class jomar.dev.** { *; }
+-keep class cn.pedant.SweetAlert.** { *; }
+-keep class android.app.Service { *; }
+-keep class org.conscrypt.** { *; }
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# GSON serialized name fields
+-keepnames class * {
+    @com.google.gson.annotations.SerializedName <fields>;
+}
 
+# Existing obfuscation rule
 -obfuscate
