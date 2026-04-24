@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sweet="http://schemas.android.com/apk/res-auto"
+	xmlns:aapt="http://schemas.android.com/aapt"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ProxySettings">
+	
+    <include
+		layout="@layout/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	
+	
+    <LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+        <android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="8dp"
+			sweet:cardBackgroundColor="@color/colorAccent"
+			sweet:cardCornerRadius="2dp"
+			sweet:cardElevation="2dp"
+			sweet:contentPadding="10dp">
+			
+            <RelativeLayout
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:id="@+id/rl_toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="75dp"
+				android:layout_marginRight="5dp"
+				android:layout_alignParentTop="true">
+				
+                <TextView
+					android:textSize="18sp"
+					android:textColor="@color/white"
+					android:gravity="center"
+					android:id="@+id/tv_info"
+					android:paddingLeft="12dp"
+					android:paddingTop="10dp"
+					android:paddingRight="12dp"
+					android:paddingBottom="10dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginRight="40dp"
+					android:layout_alignParentRight="true"/>
+					
+            </RelativeLayout>
+            
+			<TextView
+				android:id="@+id/tv_demo"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@+id/rl_toolbar"/>
+				
+        </android.support.v7.widget.CardView>
+        
+		<android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="8dp"
+			sweet:cardCornerRadius="2dp"
+			sweet:cardElevation="2dp"
+			sweet:contentPadding="10dp">
+			
+            <LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="70dp">
+				
+                <LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="25dp"
+					android:layout_margin="5dp">
+					
+                    <TextView
+						android:textColor="#000000"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Nombre de Host:"/>
+						
+                    <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"/>
+						
+                    <LinearLayout
+						android:gravity="left|center_vertical|center_horizontal|center"
+						android:orientation="horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp">
+						
+                        <TextView
+							android:textIsSelectable="true"
+							android:focusable="true"
+							android:longClickable="true"
+							android:id="@+id/ip_layout"
+							android:textStyle="bold"
+							android:textColor="#2196f3"
+							android:gravity="center"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="15dp"/>
+							
+                    </LinearLayout>
+                </LinearLayout>
+				
+                <LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="25dp"
+					android:layout_margin="5dp">
+					
+                    <TextView
+						android:textColor="#000000"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Puerto Proxy:"/>
+						
+                    <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"/>
+						
+                    <TextView
+						android:id="@+id/textport"
+						android:textIsSelectable="true"
+						android:focusable="true"
+						android:longClickable="true"
+						android:textColor="#03a9f4"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="10dp"
+						android:text="8080"/>
+						
+                </LinearLayout>
+            </LinearLayout>
+			
+        </android.support.v7.widget.CardView>
+		
+		<android.support.v7.widget.CardView
+			android:id="@+id/zonawifi"
+			android:clickable="true"
+			android:layout_gravity="center"
+			android:layout_width="190dp"
+			android:layout_height="50dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="8dp"
+			sweet:cardCornerRadius="2dp"
+			sweet:cardElevation="2dp"
+			sweet:contentPadding="10dp">
+			
+			<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="25dp">
+			
+			<TextView
+					android:textStyle="bold"
+					android:textColor="@color/colorPrimary"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="@string/on_wifi_zone"/>
+						
+					
+			<ImageView
+				android:gravity="center"
+				android:src="@drawable/hotspot_azul"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+					
+			</LinearLayout>
+			
+			</android.support.v7.widget.CardView>
+		
+        <LinearLayout
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp">
+			
+            <TextView android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimary"
+				android:gravity="center"
+				android:paddingLeft="12dp"
+				android:paddingTop="10dp"
+				android:paddingRight="12dp"
+				android:paddingBottom="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp"
+				android:layout_marginLeft="25dp"
+				android:text="@string/activar_wifi_shared"/>
+				
+            <CheckBox
+				android:gravity="center"
+				android:id="@+id/cb_enable"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_alignParentRight="true"/>
+				
+        </LinearLayout>
+		
+        <LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:layout_margin="10dp">
+			
+            <LinearLayout
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="30dp">
+				
+                <TextView
+					android:textStyle="bold"
+					android:textColor="@color/colorPrimary"
+					android:gravity="left|center_vertical|center_horizontal|center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="@string/recuerde_activar_zona_wifi"/>
+					
+            </LinearLayout>
+			
+            <LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="150dp">
+				
+                <TextView
+					android:textColor="#000000"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp" 
+					android:text="1. Conecte otro dispositivo a la red WiFi utilizando el SSID / Contraseña."/>
+					
+                <TextView
+					android:textColor="#000000"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="2. Configure el proxy en el dispositivo conectado."/>
+					
+                <TextView
+					android:textColor="#000000"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="Guia:"/>
+					
+                <TextView
+					android:textColor="#000000"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="(Busque en línea cómo configurar el proxy en su dispositivo o consulte esta guía)"/>
+					
+                <TextView
+					android:textColor="#000000"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="No es necesario instalar esta aplicación y ejecutar Hotshare en el otro dispositivo"/>
+					
+            </LinearLayout>
+			
+        </LinearLayout>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+			
+		<!--<com.google.android.gms.ads.AdView
+			xmlns:ads="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/adView5"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			ads:adSize="BANNER"
+			ads:adUnitId="ca-app-pub-1234567890123456/1234567890">
+			</com.google.android.gms.ads.AdView>-->
+		
+    </LinearLayout>
+	
+</LinearLayout>

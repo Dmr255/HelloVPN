@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Painel de cores modificado por @japadss -->
+
+	<!-- Tela inicial Barras -->
+	<color name="color01">#cd0000</color> <!---->
+	<color name="color02">#1E90FF</color> <!---->
+	<color name="color03">#000000</color> <!---->
+
+	<!-- Tela inicial textos -->
+	<color name="color04">#ffffff</color> <!---->
+	<color name="color05">#ffffff</color> <!---->
+	<color name="color06">#002b2d</color> <!---->
+	<color name="color12">#002b2d</color> <!---->
+
+	<!-- Tela update -->
+	<color name="color07">#002b2d</color> <!--Barra superior-->
+	<color name="color08">#002b2d</color> <!--Textos-->
+	<color name="color09">#ff00ff</color> <!---->
+
+	<!-- Tela inicial Botões -->
+	<color name="color10">#dedede</color> <!---->
+	<color name="color11">#cd0000</color> <!---->
+
+	<!-- Tela Drayable Config -->
+	<color name="color13">#cd0000</color> <!---->
+	<color name="color14">#ffffff</color> <!---->
+	<color name="color15">#ff00ff</color> <!---->
+
+	<!-- Textos informação -->
+	<color name="color16">#002b2d</color> <!--Titulos-->
+	<color name="color17">#002b2d</color> <!--Textos-->
+	<color name="color18">#ff0000</color> <!--Links-->
+	<color name="color19">#00ff00</color> <!---->
+
+	<!-- Tela configuracao -->
+	<color name="color20">#002b2d</color> <!---->
+	<color name="color21">#002b2d</color> <!---->
+	<color name="color22">#002b2d</color> <!---->
+	<color name="color26">#ff00ff</color> <!---->
+
+	<!-- Tela drayable logs -->
+	<color name="color23">#ffffff</color> <!---->
+	<color name="color24">#002b2d</color> <!---->
+	<color name="color25">#002b2d</color> <!---->
+
+	<!-- teste -->
+	<color name="colorOff">#00ff00</color> <!---->
+	<color name="colortest">#ffff00</color> <!---->
+
+	<!-- cores -->
+	<color name="blue">#002b2d</color>
+	<color name="blue_light">#1E90FF</color>
+	<color name="gray">#808080</color>
+	<color name="gray_light">#DEDEDE</color>
+	<color name="black">#002b2d</color>
+	<color name="black_light">#002b2d</color>
+	<color name="white">#F6F7E4</color>
+	<color name="red">#FD1C0D</color>
+	<color name="yellow">#EEFD00</color>
+	<color name="orange">#ffa500</color>
+	<color name="green">#04D000</color>
+	<color name="transparent">#002b2d</color>
+	
+	<!--color flotante del home colorAccent-->
+	<color name="colorPrimary">#002b2d</color>
+	<color name="colorPrimaryDark">#002b2d</color>
+	<color name="colorSecondary">@color/blue</color>
+	<color name="colorAccent">#FD1C0D</color>
+	<color name="cris">#ff0000ff</color>
+
+	<color name="textColorPrimary">#002b2d</color>
+	<color name="textColorSecondary">#002b2d</color>
+	<color name="colorTextEnabled">#002b2d</color>
+	<color name="colorTextDisabled">#DEDEDE</color>
+
+	<color name="colorText">@color/text_color</color>
+	<color name="colorPrimaryBackground">#EAEAEA</color>
+	<color name="colorSecondaryBackground">#ffffff</color>
+
+</resources>

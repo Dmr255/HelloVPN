@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:theme="@style/AppAlertDialogLogin"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="130dp"
+		android:id="@+id/newupdateRelativeLayout1"
+		android:background="#002b2d">
+
+		<RelativeLayout
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerInParent="true"
+			android:background="@drawable/ic_userpass"
+			android:layout_marginTop="20dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="DATOS DE LA CUENTA"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_centerInParent="true"
+			android:textColor="#F6F7E4"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:background="#002b2d"/>
+
+	</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@drawable/h_spin_shp1"
+			android:id="@+id/h_u_l"
+			android:layout_margin="5dp"
+			android:layout_marginTop="5dp">
+
+			<android.support.design.widget.TextInputEditText
+				android:id="@+id/username"
+				android:background="@null"
+				android:layout_width="fill_parent"
+				android:layout_height="match_parent"
+				android:hint="Usuario"
+				android:imeOptions="actionUnspecified|normal"
+				android:nextFocusDown="@+id/HarliePasss"
+				android:singleLine="true"
+				android:inputType="text"
+				android:textSize="14sp"
+				android:layout_centerInParent="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginLeft="40dp"
+				android:textColorHint="#002b2d"
+				android:paddingLeft="5dp"/>
+
+			<ImageView
+				android:tint="@color/h_c"
+				android:layout_width="29dp"
+				android:layout_height="29dp"
+				android:src="@drawable/h_acnt"
+				android:layout_margin="10dp"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@drawable/h_spin_shp1"
+			android:id="@+id/h_p_l"
+			android:gravity="center"
+			android:layout_margin="5dp"
+			android:layout_marginTop="5dp">
+
+			<android.support.design.widget.TextInputEditText
+				android:id="@+id/password"
+				android:background="@null"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:hint="contraseña"
+				android:singleLine="true"
+				android:textSize="14sp"
+				android:inputType="textPassword"
+				android:layout_centerInParent="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="40dp"
+				android:textColorHint="#002b2d"
+				android:paddingLeft="5dp"/>
+
+			<ImageView
+				android:tint="@color/h_c"
+				android:layout_width="29dp"
+				android:layout_height="29dp"
+				android:src="@drawable/h_pass"
+				android:layout_margin="10dp"/>
+
+			<ImageButton
+				android:layout_alignEnd="@id/password"
+				android:id="@+id/show_password"
+				android:src="@drawable/ic_visibility_off_black_24dp"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:hint="@string/show_password"
+				android:layout_gravity="right"
+				android:background="#00ffffff"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="15dp"/>
+
+		</RelativeLayout>
+
+	<CheckBox
+		android:id="@+id/save_password"
+		android:tint="@color/h_c"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:text="@string/save_password"
+		android:background="@drawable/border4"
+		android:textColor="#002b2d"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:visibility="gone"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:text="👉COMPRAR PREMIUM"
+			android:textColor="#002b2d"
+			android:onClick="Contato_Acesso"
+			android:gravity="center"
+			android:textStyle="bold"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="5dp"
+		android:padding="10dp">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:text="SALIR"
+			android:textColor="#F6F7E4"
+			style="@style/dialog_blue_button"
+			android:id="@+id/cancelz"
+			android:layout_marginRight="20dp"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:text="GUARDAR"
+			android:layout_marginLeft="20dp"
+			android:textColor="#F6F7E4"
+			style="@style/dialog_blue_button"
+			android:id="@+id/loginz"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

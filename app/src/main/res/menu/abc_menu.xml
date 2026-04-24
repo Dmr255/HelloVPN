@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+		android:id="@+id/apn"
+		android:icon="@drawable/ic_apn"
+		android:title="APN Mobil"/>
+	<item
+		android:id="@+id/updater"
+		android:icon="@drawable/ic_update2"
+		android:title="Actualizar"/>
+
+	<item
+		android:id="@+id/hostshare"
+		android:icon="@drawable/hotspot"
+		android:title="Wifi Share"/>
+
+	<item android:id="@+id/settings"
+		android:icon="@drawable/ic_config"
+		android:title="Configuración"/>
+	
+</menu>

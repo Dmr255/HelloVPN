@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="130dp"
+		android:id="@+id/newupdateRelativeLayout1"
+		android:background="@color/color07">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Text"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_centerInParent="true"
+			android:id="@+id/newupdateTextView1"
+			android:textColor="#FFFFFF"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="15dp"/>
+
+		<RelativeLayout
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_above="@id/newupdateTextView1"
+			android:layout_centerInParent="true"
+		
+			android:layout_marginBottom="10dp"
+			android:layout_marginTop="10dp"/>
+
+	</RelativeLayout>
+
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@id/newupdateRelativeLayout1"
+		android:id="@+id/newupdateTextView2"
+		android:textColor="@color/color08"
+		android:layout_marginTop="15dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Text"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@id/newupdateTextView2"
+		android:layout_marginTop="15dp"
+		android:id="@+id/newupdateTextView3"
+		android:textColor="@color/color08"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"/>
+
+	<Button
+		style="@style/dialog_blue_button"
+		android:layout_height="40dp"
+		android:layout_width="match_parent"
+		android:text="YES"
+		android:textStyle="bold"
+		android:layout_below="@id/newupdateTextView3"
+		android:id="@+id/yesupdate"
+		android:layout_marginTop="30dp"
+		android:textColor="#FFFFFF"
+		android:layout_centerInParent="true"
+		android:layout_marginRight="25dp"
+		android:layout_marginLeft="25dp"/>
+
+	<Button
+		style="@style/dialog_blue_button"
+		android:layout_height="40dp"
+		android:layout_width="match_parent"
+		android:text="NO"
+		android:textStyle="bold"
+		android:layout_below="@id/yesupdate"
+		android:id="@+id/noupdate"
+		android:layout_marginTop="10dp"
+		android:textColor="#FFFFFF"
+		android:layout_centerInParent="true"
+		android:layout_marginRight="25dp"
+		android:layout_marginLeft="25dp"/>
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="10dp"
+		android:layout_below="@id/noupdate"/>
+	
+</RelativeLayout>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- cores -->
+	<color name="blue">#002b2d</color>
+	<color name="blue_light">#1E90FF</color>
+	<color name="gray">#808080</color>
+	<color name="gray_light">#DEDEDE</color>
+	<color name="black">#002b2d</color>
+	<color name="black_light">#002b2d</color>
+	<color name="white">#F6F7E4</color>
+	<color name="red">#FD1C0D</color>
+	<color name="yellow">#EEFD00</color>
+	<color name="orange">#ffa500</color>
+	<color name="green">#04D000</color>
+	<color name="transparent">#ffffffff</color>
+	
+	<color name="h_c2">#FF9900</color>
+    <color name="h_c">#FF9900</color>
+	
+	<color name="rippelColor">#002b2d</color>
+	<color name="rippelColor1">#002b2d</color>
+	
+	<color name="udp1">#6a00ff</color>
+	<color name="udp2">#aa00ff</color>
+
+	<color name="globe_network">#ff011f62</color>
+	<color name="globe_network2">#ff32b7fc</color>
+	<color name="globe_tm_network">#ff011f62</color>
+	<color name="globe_tm_network2">#ffe54f3b</color>
+	<color name="smart_network">#ff4baa4b</color>
+	<color name="smart_network2">#ff33a6e4</color>
+	<color name="smart_tnt_network">#ff4baa4b</color>
+	<color name="smart_tnt_network2">#fff48222</color>
+	<color name="success">#ff51bb75</color>
+	<color name="sun_network">#fffeda09</color>
+	<color name="sun_network2">#ffe97a48</color>
+	<color name="tm_network">#ffe54f3b</color>
+	<color name="tm_network2">#ff7939ec</color>
+	<color name="tnt_network">#fff48222</color>
+	<color name="tnt_network2">#fffa2167</color>
+	<color name="cris">#ff0000ff</color>
+	
+	<color name="float_transparent">#002b2d</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#002b2d</color>
+    <color name="gray_btn_bg_pressed_color">#002b2d</color>
+    <color name="blue_btn_bg_color">#002b2d</color>
+    <color name="blue_btn_bg_pressed_color">#002b2d</color>
+    <color name="red_btn_bg_color">#002b2d</color>
+    <color name="red_btn_bg_pressed_color">#002b2d</color>
+    <color name="error_stroke_color">#002b2d</color>
+    <color name="success_stroke_color">#002b2d</color>
+    <color name="trans_success_stroke_color">#002b2d</color>
+    <color name="warning_stroke_color">#002b2d</color>
+    <color name="material_blue_grey_80">#002b2d</color>
+    <color name="material_blue_grey_90">#002b2d</color>
+    <color name="material_blue_grey_95">#002b2d</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+	
+</resources>

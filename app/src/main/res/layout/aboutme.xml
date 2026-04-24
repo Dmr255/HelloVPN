@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="10dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="5.0dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="INFORMACION"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:textStyle="bold"
+				android:textColor="@color/color16"
+				android:textSize="15sp"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:textAppearance="?android:textAppearanceSmall"
+				android:textColor="@color/color17"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="MAGIC VPN es una aplicación de Internet privada que funciona a través de un servidor preconfigurado."
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginTop="5dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="5.0dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip">
+
+			<TextView
+				android:textStyle="bold"
+				android:textColor="@color/color16"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="COMO USAR?"
+				android:gravity="left"
+				android:layout_gravity="left"
+				android:textSize="15sp"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1. Haz clic en ACTUALIZAR"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:textColor="@color/color17"
+				android:textSize="14sp"
+				android:layout_marginTop="5dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2. Actualizar CONFIGURACIÓN DE RED"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:gravity="center"
+				android:textColor="@color/color17"
+				android:textStyle="bold"/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2. Haz clic en INICIAR SESIÓN e ingresa tu acceso"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/color17"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="4. Seleccione su OPERADOR"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:gravity="center"
+				android:textColor="@color/color17"
+				android:textStyle="bold"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="5. Haga clic en CONECTAR y espere."
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textStyle="bold"
+				android:textColor="@color/color17"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_marginTop="5dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="NOVEDADES"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:textColor="@color/color16"
+				android:textStyle="bold"
+				android:textSize="15sp"
+				android:layout_marginLeft="10dp"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp">
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:text="Grupo Telegram"
+					android:onClick="Grupo_telegram"
+					android:gravity="center"
+					android:layout_marginRight="10dp"
+					android:ellipsize="start"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					style="@style/dialog_blue_button"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:onClick="Suporte_Whats"
+					android:text="Contacto WhatsApp"
+					android:gravity="center"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					style="@style/dialog_blue_button"
+					android:layout_marginLeft="10dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_marginTop="5dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="APLICACION CREADO POR @AlfSilic"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:textColor="@color/color16"
+				android:textStyle="bold"
+				android:textSize="15sp"
+				android:layout_marginLeft="10dp"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp">
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="35dp"
+					android:text="Contacto Telegram"
+					android:onClick="Contato_Adm"
+					android:gravity="center"
+					android:layout_marginRight="10dp"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					style="@style/dialog_blue_button"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="5.0dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip">
+
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+
+				<TextView
+					android:textColor="@color/color16"
+					android:gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text=" © TODOS LOS DERECHOS © "
+					android:layout_gravity="center"
+					android:textStyle="bold"
+					android:textSize="15sp"/>
+
+				<TextView
+					android:textColor="@color/color18"
+					android:gravity="center"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="™ MAGIC VPN ™"
+					android:layout_gravity="center"
+					android:textStyle="bold"
+					android:layout_marginTop="5dp"
+					android:textSize="15sp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:padding="10dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="35dp"
+				android:text="SALIR"
+				android:textColor="#FFFFFF"
+				style="@style/dialog_blue_button"
+				android:id="@+id/close"
+				android:textSize="13sp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+
+    defaultConfig {
+        applicationId "com.magicvpn.net"
+		minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+		multiDexEnabled true
+    }
+    buildTypes {
+        release {
+			useProguard true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	
+	// support libs
+    compile 'com.android.support:appcompat-v7:25.+'
+	compile 'com.android.support:preference-v7:25.+'
+	compile 'com.android.support:design:25.+'
+	
+	// outros
+	compile 'com.android.support.constraint:constraint-layout:1.0.2'
+	compile 'com.google.android.gms:play-services-ads-lite:11.8.0'
+	compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+	compile 'com.android.support:customtabs:25.+'
+	compile 'io.github.yavski:fab-speed-dial:1.0.6'
+	
+	compile project(':service')
+	compile project(':style')
+	compile project(':SweetAlert')
+}

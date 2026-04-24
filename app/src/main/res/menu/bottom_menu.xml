@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+		android:id="@+id/updater"
+		android:icon="@drawable/ic_update2"
+		android:title="Actualizar"/>
+
+	<item
+		android:id="@+id/about1"
+        android:icon="@drawable/ic_info"
+        android:title="Información"/>
+
+	<item
+        android:id="@+id/login1"
+        android:icon="@drawable/ic_login"
+        android:title="Cuenta"/>
+
+	
+	<item android:id="@+id/settings"
+		android:icon="@drawable/ic_config"
+		android:title="Configuración"/>
+	
+	<item
+        android:id="@+id/logs"
+        android:icon="@drawable/ic_logs"
+        android:title="Registro"/>
+
+</menu>
