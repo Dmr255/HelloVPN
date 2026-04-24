@@ -1,41 +1,53 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    namespace 'com.slipkprojects.sockshttp'
+
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.magicvpn.net"
-		minSdkVersion 21
-        targetSdkVersion 29
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-		multiDexEnabled true
+        multiDexEnabled true
     }
+
     buildTypes {
-        release {
-			useProguard true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        debug {
+            debuggable true
+            minifyEnabled false
         }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
-	
-	// support libs
-    compile 'com.android.support:appcompat-v7:25.+'
-	compile 'com.android.support:preference-v7:25.+'
-	compile 'com.android.support:design:25.+'
-	
-	// outros
-	compile 'com.android.support.constraint:constraint-layout:1.0.2'
-	compile 'com.google.android.gms:play-services-ads-lite:11.8.0'
-	compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
-	compile 'com.android.support:customtabs:25.+'
-	compile 'io.github.yavski:fab-speed-dial:1.0.6'
-	
-	compile project(':service')
-	compile project(':style')
-	compile project(':SweetAlert')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.browser:browser:1.7.0'
+
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    implementation 'com.github.yavski:fab-speed-dial:1.0.6'
+
+    implementation project(':service')
+    implementation project(':style')
+    implementation project(':SweetAlert')
 }
