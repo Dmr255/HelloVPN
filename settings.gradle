@@ -1,1 +1,1 @@
-include ':style', ':service', ':app'
+include ':style', ':service', ':SweetAlert', ':app'
